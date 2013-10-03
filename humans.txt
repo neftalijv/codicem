@@ -1,0 +1,22 @@
+/* TEAM */
+
+Co-founder: Edgar Dueñas
+From: Guadalajara, México
+
+Co-founder: Edgar Tiburcio
+From: Guadalajara, México
+
+Co-founder: Ivan Valdez
+From: Guadalajara, México
+
+Co-founder: Nallely Reyes
+From: Guadalajara, México
+
+Co-founder: Neft0 JV
+From: Guadalajara, México
+
+/* SITE */
+	Last update: 2013/09/17
+	Language: Spanish
+	Standars: HTML5, CSS3, JavaScript, PHP
+	Components: Responsive Design, jQuery, CodeIgniter, MySQL

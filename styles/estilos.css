@@ -1,0 +1,632 @@
+
+* {
+	border  : 0;
+	margin  : 0;
+	padding : 0;
+}
+
+article, figcaption, figure, footer, header, hgroup, nav, section {
+	display : block;
+}
+
+@font-face {
+    font-family : 'exoregular';
+    src         : url('../fonts/exo-regular-webfont.eot');
+    src         : url('../fonts/exo-regular-webfont.eot?#iefix')     format('embedded-opentype'),
+                  url('../fonts/exo-regular-webfont.woff')           format('woff'),
+                  url('../fonts/exo-regular-webfont.ttf')            format('truetype'),
+                  url('../fonts/exo-regular-webfont.svg#exoregular') format('svg');
+    font-weight : normal;
+    font-style  : normal;
+
+}
+
+@font-face {
+    font-family: 'facebook_letter_facesregular';
+    src: url('../fonts/facebolf-webfont.eot');
+    src: url('../fonts/facebolf-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/facebolf-webfont.woff') format('woff'),
+         url('../fonts/facebolf-webfont.ttf') format('truetype'),
+         url('../fonts/facebolf-webfont.svg#facebook_letter_facesregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: "colaborate-thinregular";
+    src: url("../fonts/ColabThi-webfont.eot");
+    src: url("../fonts/ColabThi-webfont.eot?#iefix") format("embedded-opentype"),
+         url("../fonts/ColabThi-webfont.woff") format("woff"),
+         url("../fonts/ColabThi-webfont.ttf") format("truetype"),
+         url("../fonts/ColabThi-webfont.svg#colaborate-thinregular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+	font-family : "Chalet";
+	src         : url("../fonts/Chalet.eot");
+	src         : url("../fonts/Chalet.eot#iefix")  format("enbedded-opentype"),
+			      url("../fonts/Chalet.woff")       format("woff"),
+			      url("../fonts/Chalet.ttf")        format("ttf"),
+			      url("../fonts/Chalet.svg#Chalet") format("svg");
+	font-weight : normal;
+	font-style  : normal;
+}
+
+@font-face {
+	font-family : "Pecita";
+	src         : url("../fonts/Pecita.eot");
+	src         : url("../fonts/Pecita.eot#iefix")  format("enbedded-opentype"),
+			      url("../fonts/Pecita.woff")       format("woff"),
+			      url("../fonts/Pecita.ttf")        format("ttf"),
+			      url("../fonts/Pecita.svg#Pecita") format("svg");
+	font-weight : normal;
+	font-style  : normal;
+}
+
+body {
+	//background  : #efeff4;
+	color       : #212121;
+	font-family : "exoregular", Helvetica, Verdana;
+	font-size   : 1em;  
+}
+
+a {
+	color           : #179cd8;
+	text-decoration : none;
+	opacity         : 1;
+	filter          : alpha(opacity = 10);
+}
+
+figcaption {
+	font-size  : 0.85em;
+	padding    : 0.25em;
+	text-align : center; 
+}
+
+img, video {
+	max-width : 100%;
+}
+
+header, section#contenido, aside, footer {
+	background : #FFF;
+	margin     : auto auto;
+	max-width  : 100%;
+	text-align : center;  
+
+}
+
+header {
+	border-bottom : 0.1em solid #E3E3E3;
+	margin : 0 auto;
+	background: rgb(255,255,255);
+} 
+
+header a:hover {
+	opacity : 1;
+	filter  : alpha(opacity = 10);
+}
+
+header h1, nav {
+	display        : inline-block;
+	max-width      : 100%;
+	vertical-align : middle;
+}
+
+
+
+
+nav ul, header ul {
+
+	list-style : none;
+}
+header ul.menu{
+	display : none;
+	margin  : 0;
+	padding : 0;
+}
+header ul img{
+	width : 100%;
+	max-width: 65%;
+}
+nav li, header li {
+	display        : inline-block;
+	padding        : 0.1em;
+	vertical-align : top; 
+}
+
+
+
+
+nav a {
+	background    : #FFF;
+	border        : 0.1em solid #179cd8;
+	border-radius : 0.25em;
+	color         : #179cd8;
+	display       : block;
+	font-size     : 1em;
+	padding       : 0.2em;
+}
+
+nav a:active {
+	background    : #179cd8;
+	border        : 0.1em solid #179cd8;
+	color         : #fff;
+	opacity       : 1;
+	filter        : alpha(opacity = 10);
+}
+
+nav a.seccion {
+	background    : #179cd8;
+	border        : 0.1em solid #179cd8;
+	color         : #fff;
+	opacity       : 1;
+	filter        : alpha(opacity = 10);
+}
+
+.expand {
+	border     : none;
+	text-align :left;
+	width      : 1em;
+}
+
+section#contenido {
+	width: 100%;
+}
+
+section#principal, aside {
+	background: #fff;
+	width: 100%;
+	color: #212121;
+	margin: 0;
+	padding:0;
+}
+
+section#principal {
+	background-image: linear-gradient(bottom, rgb(97,154,235) 40%, rgb(113,181,240) 80%);
+		background-image: -o-linear-gradient(bottom, rgb(97,154,235) 40%, rgb(113,181,240) 80%);
+		background-image: -moz-linear-gradient(bottom, rgb(97,154,235) 40%, rgb(113,181,240) 80%);
+		background-image: -webkit-linear-gradient(bottom, rgb(97,154,235) 40%, rgb(113,181,240) 80%);
+		background-image: -ms-linear-gradient(bottom, rgb(97,154,235) 40%, rgb(113,181,240) 80%);
+		background-image: -webkit-gradient(
+			linear,
+			left bottom,
+			left top,
+			color-stop(0.4, rgb(97,154,235)),
+			color-stop(0.8, rgb(113,181,240))
+		);
+}
+/* Edgar Tiburcio escribio estas lineas. */
+
+/**
+ * Revisado por Neftali Jauregui
+ * Buen trabajo, todo en orden
+ */
+
+/**
+ * Neftali Jauregui: Reducción de código
+ * comentarios in-line
+ */
+
+/**
+ * Las sections mision, vision y objetivo
+ * comparten la mayoria del codigo, por ello
+ * podemos unir las tres
+ * y despues añadimos las funciones que tengan
+ * extras
+ * Algunos atributos los cambie a los
+ * contenedores para que sea más rapido para el
+ * navegador.
+ */
+
+section#mision, section#vision, 
+section#objetivo{
+	border        : 0.1em solid #179cd8;
+	border-radius : 0.3em;
+    display       : inline-block;
+    margin        : 0.5% 0;
+    max-width     : 99%;
+    width         : 49%;
+}
+
+section#objetivo{
+	margin : 0 0 0.5% 0;
+	width  : 99%;
+}
+
+section.titulo{
+    background     : #179cd8;
+    color          : white;
+}
+
+section.info{
+	padding    : 0.2em;
+    text-align : left;  
+}
+
+/* Aquí termina edicion de Edgar Tiburcio */
+
+
+/* Direction Nav */
+.flex-direction-nav a {width: 30px; height: 30px; margin: -20px 0 0; display: block; background: url(../images/bg_direction_nav.png) no-repeat 0 0; position: absolute; top: 50%; cursor: pointer; text-indent: -9999px; opacity: 0; -webkit-transition: all .3s ease;}
+.flex-direction-nav .flex-next {background-position: 100% 0; right: -36px; }
+.flex-direction-nav .flex-prev {left: -36px;}
+.flexslider:hover .flex-next {opacity: 0.8; right: 5px;}
+.flexslider:hover .flex-prev {opacity: 0.8; left: 5px;}
+.flexslider:hover .flex-next:hover, .flexslider:hover .flex-prev:hover {opacity: 1;}
+.flex-direction-nav .disabled {opacity: .3!important; filter:alpha(opacity=30); cursor: default;}
+
+.flex-control-nav {width: 100%; position: relative; bottom: 0; text-align: center;}
+.flex-control-nav li {margin: 0 6px; display: inline-block; zoom: 1; *display: inline;}
+.flex-control-paging li a {width: 11px; height: 11px; display: block; background: #666; background: rgba(0,0,0,0.5); cursor: pointer; text-indent: -9999px; -webkit-border-radius: 20px; -moz-border-radius: 20px; -o-border-radius: 20px; border-radius: 20px; box-shadow: inset 0 0 3px rgba(0,0,0,0.3);}
+.flex-control-paging li a:hover { background: #333; background: rgba(0,0,0,0.7); }
+.flex-control-paging li a.flex-active { background: #000; background: rgba(0,0,0,0.9); cursor: default; }
+
+section#galeria-inicio ul {
+	list-style : none;
+}
+
+section#galeria-inicio li {
+	display        : inline-block;
+	padding        : 0.1em;
+	vertical-align : top; 
+}
+
+aside {
+	border-top-width: 0.05em;
+	border-top-color: #E3E3E3;
+	border-top-style: solid;
+	text-align: center;
+}
+
+aside div, aside a{
+ display : inline-block;
+ vertical-align: top;
+ padding: 0.02em;
+}
+
+section#facebook{
+		color       : #fff;
+		display     : inline-block;
+		width       : 30%;  
+		font-family : "facebook_letter_facesregular","Helvetica", "Verdana";
+		background-image: linear-gradient(bottom, rgb(70,86,147) 40%, rgb(87,103,159) 80%);
+		background-image: -o-linear-gradient(bottom, rgb(70,86,147) 40%, rgb(87,103,159) 80%);
+		background-image: -moz-linear-gradient(bottom, rgb(70,86,147) 40%, rgb(87,103,159) 80%);
+		background-image: -webkit-linear-gradient(bottom, rgb(70,86,147) 40%, rgb(87,103,159) 80%);
+		background-image: -ms-linear-gradient(bottom, rgb(70,86,147) 40%, rgb(87,103,159) 80%);
+		background-image: -webkit-gradient(
+			linear,
+			left bottom,
+			left top,
+			color-stop(0.4, rgb(70,86,147)),
+			color-stop(0.8, rgb(87,103,159))
+		);
+		border-radius: 1em;
+		vertical-align : middle;
+	}
+
+	section#facebook img {
+		width:70%;
+	}
+
+	section#twitter {
+		background-image: linear-gradient(bottom, rgb(97,154,235) 40%, rgb(113,181,240) 80%);
+		background-image: -o-linear-gradient(bottom, rgb(97,154,235) 40%, rgb(113,181,240) 80%);
+		background-image: -moz-linear-gradient(bottom, rgb(97,154,235) 40%, rgb(113,181,240) 80%);
+		background-image: -webkit-linear-gradient(bottom, rgb(97,154,235) 40%, rgb(113,181,240) 80%);
+		background-image: -ms-linear-gradient(bottom, rgb(97,154,235) 40%, rgb(113,181,240) 80%);
+		background-image: -webkit-gradient(
+			linear,
+			left bottom,
+			left top,
+			color-stop(0.4, rgb(97,154,235)),
+			color-stop(0.8, rgb(113,181,240))
+		);
+		border-radius: 1em;
+		display        : inline-block;
+		vertical-align : middle;
+		width          : 30%;  
+	}
+
+	section#twitter img {
+		width:70%;
+	}
+
+	section#google {
+		background-image: linear-gradient(bottom, rgb(193,77,57) 40%, rgb(169,63,42) 80%);
+		background-image: -o-linear-gradient(bottom, rgb(193,77,57) 40%, rgb(169,63,42) 80%);
+		background-image: -moz-linear-gradient(bottom, rgb(193,77,57) 40%, rgb(169,63,42) 80%);
+		background-image: -webkit-linear-gradient(bottom, rgb(193,77,57) 40%, rgb(169,63,42) 80%);
+		background-image: -ms-linear-gradient(bottom, rgb(193,77,57) 40%, rgb(169,63,42) 80%);
+
+		background-image: -webkit-gradient(
+			linear,
+			left bottom,
+			left top,
+			color-stop(0.4, rgb(193,77,57)),
+			color-stop(0.8, rgb(169,63,42))
+		);
+		border-radius: 1em;
+		display        : inline-block;
+		vertical-align : middle;
+		width          : 30%; 
+	}
+
+	section#google img {
+		width:70%;
+	}
+
+
+
+footer {
+	border-bottom-width: 0.05em;
+	border-bottom-color: #E3E3E3;
+	border-bottom-style: solid;
+	border-top-width: 0.05em;
+	border-top-color: #E3E3E3;
+	border-top-style: solid;
+	border-radius: 0 0 2em 2em;
+	text-align: right;
+	padding:0 1em 0 0;
+}
+input:focus, textarea:focus {
+	border        : 0.15em solid #179cd8 ;
+	color         : #179cd8;
+}
+
+input.button{
+	border      : none;
+	font-family : "exoregular", Helvetica, Verdana;
+	font-size   : 1em; 
+	height      : 2.5em;
+	text-align  : center;
+}
+
+input.button:active{
+	border      : none;
+	font-family : "exoregular", Helvetica, Verdana;
+	font-size   : 1em; 
+	height      : 2.5em;
+}
+
+@media(min-width : 1021px) {
+	header h1{
+		text-align : left;
+		width      : 32%;
+	}
+
+	nav{
+		text-align : right;
+		width      : 65%;
+	}
+
+	nav li {
+		width : 18%;
+		text-align: center;
+	}
+
+
+	section#contacto{
+		text-align: left;
+	}
+
+	label{
+		display:inline-block;
+		width : 10%;
+		vertical-align: top;
+		margin: 0.25em  0 0.25em 18%;
+	}
+
+	input, textarea {
+		border        : 0.15em solid #E3E3E3 ;
+		border-radius : 0.5em;
+		color         : #212121;
+		display       : inline-block;
+		font-family   : "exoregular", Helvetica, Verdana;
+		font-size     : 1em; 
+		padding       : 0.15em;
+		margin        : 0.25em 0 0.25em 0;
+		width         : 45%;
+		max-width     : 100%;
+		height        : 2em;
+		vertical-align: top;
+
+	}
+
+	textarea{
+		height : 5em;
+	}
+	.button{
+		margin: 0.25em auto;
+		display: block;
+	}
+}
+
+@media(max-width : 1020px){
+	header h1 img{
+		text-align: center;
+		max-width : 100%;
+	}
+	header ul.menu{
+		width : 2em;
+		text-align: right;
+		display: block;
+	}
+	nav{
+		width: 100%;
+		padding: 0 0 .5em 0;
+	}
+
+	nav li {
+		width: 18%;
+	}
+
+	header img, nav{
+		display : block;
+		vertical-align: none;
+	}
+
+	section#contacto{
+		text-align: center;
+	}
+	label {
+		margin: 0;
+	}
+	input, textarea {
+		border        : 0.15em solid #E3E3E3 ;
+		border-radius : 0.5em;
+		color         : #212121;
+		display       : block;
+		font-family   : "exoregular", Helvetica, Verdana;
+		font-size     : 1em; 
+		padding       : 0.15em;
+		margin        : 0.25em auto;
+		width         : 80%;
+		max-width     : 100%;
+		height        : 2em;
+		text-align    : left;
+
+	}
+
+
+	textarea{
+		height : 5em;
+	}
+
+	section#facebook img {
+		width:60%;
+	}
+
+	section#twitter img {
+		width:60%;
+	}
+
+	section#google img {
+		width:60%;
+	}
+
+
+}
+
+@media(max-width : 1000px){
+	nav{
+		width: 100%;
+		padding: 0 0 .5em 0;
+	}
+
+	nav li {
+		width: 18%;
+	}
+
+	section#facebook img {
+		width:51%;
+	}
+
+	section#twitter img {
+		width:51%;
+	}
+
+	section#google img {
+		width:51%;
+	}
+}
+
+
+
+@media(max-width : 640px){
+
+	.flex-direction-nav a{
+		background: url(); 
+	}
+
+	nav li {
+		display   :block;
+		font-size : 1em;
+		max-width : 100%;
+		margin    : 0.25em auto; 
+		padding   : auto auto;
+		width     : 80%;
+	}
+
+	nav a {
+		height         : 2em;
+		background     : #fff;
+		border         : 0.1em solid #179cd8;
+		color          : #179cd8;
+		font-size      : 1em;
+		text-align     : center;
+	}
+
+	aside div, aside a{
+	 display : block;
+	 vertical-align: none;
+	}
+
+	input, textarea {
+		border        : 0.15em solid #E3E3E3 ;
+		border-radius : 0.5em;
+		color         : #212121;
+		display       : block;
+		font-family   : "exoregular", Helvetica, Verdana;
+		font-size     : 1em; 
+		padding       : 0.15em;
+		margin        : 0.25em auto;
+		width         : 80%;
+		max-width     : 100%;
+		height        : 2em;
+		text-align    : left;
+	}
+
+	textarea{
+		height : 5em;
+	}
+
+	input.button{
+		border      : none;
+		font-family : "exoregular", Helvetica, Verdana;
+		font-size   : 1em; 
+		height      : 2.5em;
+		text-align  : center;
+	}
+
+	input.button:active{
+		border      : none;
+		font-family : "exoregular", Helvetica, Verdana;
+		font-size   : 1em; 
+		height      : 2.5em;
+	}
+
+	section#facebook img {
+		width:51%;
+	}
+
+	section#twitter img {
+		width:51%;
+	}
+
+	section#google img {
+		width:51%;
+	}
+	/* Edgar Tiburcio escribio estas lineas */
+
+    /**
+     * Revisado por Neftali Jauregui:
+     * Excelente trabajo Tibu
+     */
+    
+    section#vision, section#mision{
+        width  : 99%;
+        margin : 0.5%;
+    }
+
+    section#vision{
+        margin : 0 0 0.5% 0;
+    }
+    
+    /* Aquí termina edicion Edgar Tiburcio */
+
+}
